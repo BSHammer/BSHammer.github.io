@@ -132,24 +132,25 @@ footer a {
 /* New Styles */
 .deck-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(500px, 1fr)); /* Two wider columns */
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
     gap: 20px; /* Space between the images */
-    padding: 20px;
-    max-width: 1400px; /* Total max width to keep things from stretching too much */
+    padding: 20px; /* Padding around the grid */
+    max-width: 1200px; /* Maximum width for the grid */
     margin: 0 auto; /* Center the grid on the page */
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
     .deck-grid {
-        grid-template-columns: repeat(2, 1fr); /* Responsive two-column layout for medium screens */
+        grid-template-columns: 1fr; /* Switch to one column when screen is too narrow */
     }
 }
 
-@media (max-width: 700px) {
-    .deck-grid {
-        grid-template-columns: 1fr; /* Switch to single column on narrow screens */
-    }
+.deck-grid img {
+    width: 100%; /* Make images fill their grid column */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
 }
+
 
 
 .deck-item {
