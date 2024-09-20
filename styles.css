@@ -132,7 +132,7 @@ footer a {
 /* New Styles */
 .deck-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Exactly two columns */
+    grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
     gap: 20px;
     padding: 20px;
 }
@@ -140,6 +140,12 @@ footer a {
 @media (max-width: 800px) {
     .deck-grid {
         grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .deck-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Wider images on mobile */
     }
 }
 
