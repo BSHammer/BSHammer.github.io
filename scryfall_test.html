@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTG Deck Page</title>
     <style>
-        .card-link a {
-            color: inherit; /* Use the parent's text color */
-            text-decoration: none; /* Remove underline */
-            cursor: pointer; /* Change cursor to pointer to indicate hoverable text */
-        }
+        .card-link-wrapper {
+        display: flex; /* Use flexbox for layout */
+        align-items: center; /* Vertically center items */
+        position: relative; /* Needed for absolute positioning of the image */
+    }
 
-        .card-image {
-        display: none;
-        position: absolute;
-        width: 200px;
-        z-index: 100;
-        border: 1px solid black;
+    .card-link {
+        color: inherit; /* Use the parent's text color */
+        text-decoration: none; /* Remove underline */
+        cursor: pointer; /* Change cursor to pointer */
+        margin-right: 10px; /* Space between text and image */
+    }
+
+    .card-image {
+        display: none; /* Hide image by default */
+        width: 200px; /* Set width of the image */
+        z-index: 100; /* Ensure it appears above other elements */
+        border: 1px solid black; /* Optional: border for the image */
     }
 
     .card-link-wrapper:hover .card-image {
-        display: block;
+        display: block; /* Show image on hover */
     }
 
-    .card-link-wrapper {
-        position: relative;
-
-    }
     </style>
 </head>
 <body>
