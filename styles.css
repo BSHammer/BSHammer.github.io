@@ -132,19 +132,16 @@ footer a {
 /* New Styles */
 .deck-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-    gap: 20px; /* Space between the images */
-    padding: 20px; /* Padding around the grid */
-    max-width: 1200px; /* Maximum width for the grid */
-    margin: 0 auto; /* Center the grid on the page */
+    grid-template-columns: repeat(2, 1fr); /* Always two columns */
+    gap: 20px;
+    padding: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     .deck-grid {
-        grid-template-columns: 1fr; /* Switch to one column when screen is too narrow */
+        grid-template-columns: 1fr; /* Switch to one column on small screens */
     }
 }
-
 
 .deck-item {
     flex: 1 1 300px; /* Grow, shrink, and set a base width */
