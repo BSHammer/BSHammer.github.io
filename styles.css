@@ -145,13 +145,6 @@ footer a {
     }
 }
 
-.deck-grid img {
-    width: 100%; /* Make images fill their grid column */
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-}
-
-
 
 .deck-item {
     flex: 1 1 300px; /* Grow, shrink, and set a base width */
