@@ -6,20 +6,21 @@
     <title>MTG Deck Page</title>
     <style>
         .card-link-wrapper {
-        display: flex; /* Use flexbox for layout */
-        align-items: center; /* Vertically center items */
-        position: relative; /* Needed for absolute positioning of the image */
+        position: relative; /* Position relative to allow absolute positioning of the image */
     }
 
-    .card-link {
+    .card-link a {
         color: inherit; /* Use the parent's text color */
         text-decoration: none; /* Remove underline */
         cursor: pointer; /* Change cursor to pointer */
-        margin-right: 10px; /* Space between text and image */
+        display: inline-block; /* Ensure text is inline */
     }
 
     .card-image {
         display: none; /* Hide image by default */
+        position: absolute; /* Position absolutely */
+        left: 0; /* Align to the left of the wrapper */
+        top: 100%; /* Position below the text */
         width: 200px; /* Set width of the image */
         z-index: 100; /* Ensure it appears above other elements */
         border: 1px solid black; /* Optional: border for the image */
@@ -28,7 +29,6 @@
     .card-link-wrapper:hover .card-image {
         display: block; /* Show image on hover */
     }
-
     </style>
 </head>
 <body>
