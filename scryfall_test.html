@@ -5,24 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTG Deck Page</title>
     <style>
-        /* Hide the card images initially */
         .card-image {
-            display: none;
-            position: absolute;
-            width: 200px;
-            z-index: 100;
-            border: 1px solid black;
-        }
+        display: none;
+        position: absolute;
+        width: 200px;
+        z-index: 100;
+        border: 1px solid black;
+    }
 
-        /* Show the card image when hovering over the card name */
-        .card-link:hover + .card-image {
-            display: block;
-        }
+    .card-link-wrapper:hover .card-image {
+        display: block;
+    }
 
-        /* Align the image next to the link */
-        .card-link-wrapper {
-            position: relative;
-        }
+    .card-link-wrapper {
+        position: relative;
+    }
     </style>
 </head>
 <body>
