@@ -5,31 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTG Deck Page</title>
     <style>
-        .card-link-wrapper {
-        position: relative; /* Make this element the reference for positioning the image */
-        /* display: inline-block; Ensure the list item wraps only around the text */
+        ul {
+        list-style-type: disc; /* Optional: Set bullet point style */
+        padding-left: 20px; /* Optional: Add left padding to match list style */
+    }
+
+    .card-link-wrapper {
+        position: relative; /* Allow absolute positioning of the image */
+        margin-bottom: 10px; /* Add space between list items */
     }
 
     .card-link {
         color: inherit; /* Use the parent's text color */
         text-decoration: none; /* Remove underline */
         cursor: pointer; /* Make it clear the text is interactive */
-        display: inline-block; /* Ensure the text behaves like a block */
+        display: inline-block; /* Keep text inline, but don't disrupt list layout */
     }
 
     .card-image {
-        display: none; /* Initially hide the image */
+        display: none; /* Hide image by default */
         position: absolute; /* Position relative to the text */
         left: calc(100% + 10px); /* Place image directly to the right of the text, with a small gap */
         top: 0; /* Align the image at the top of the text */
         width: 200px; /* Set the image width */
-        z-index: 100; /* Ensure it appears above other elements */
-        border: 1px solid black; /* Optional border for the image */
+        z-index: 100; /* Ensure the image appears above other elements */
+        border: 1px solid black; /* Optional border for clarity */
     }
 
     .card-link-wrapper:hover .card-image {
         display: block; /* Show the image when hovering over the text */
     }
+
     </style>
 </head>
 <body>
