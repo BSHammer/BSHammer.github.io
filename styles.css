@@ -132,20 +132,16 @@ footer a {
 /* New Styles */
 .deck-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px; /* Equal space between the columns */
+    padding: 20px; /* Padding inside the grid container */
+    max-width: 1200px; /* Max width of the grid to prevent it from stretching too far */
+    margin: 0 auto; /* Center the grid container on the page */
 }
 
 @media (max-width: 800px) {
     .deck-grid {
         grid-template-columns: 1fr; /* Single column on smaller screens */
-    }
-}
-
-@media (max-width: 600px) {
-    .deck-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Wider images on mobile */
     }
 }
 
