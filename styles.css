@@ -61,7 +61,7 @@ nav ul li a {
 /* Main Section */
 main {
     padding: 20px;
-    text-align: center;
+    text-align: center; /* sets all text in main tags to be centered */
 }
 
 .intro h2 {
