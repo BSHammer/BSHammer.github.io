@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTG Deck Page</title>
+</head>
+<body>
+    <h1>MTG Deck List</h1>
+    <ul>
+        <li><a href="https://scryfall.com/card/znr/223" class="scryfall-card" data-card-image="large">Omnath, Locus of Creation</a></li>
+        <li><a href="https://scryfall.com/card/znr/211" class="scryfall-card" data-card-image="large">Lotus Cobra</a></li>
+        <li><a href="https://scryfall.com/card/eld/172" class="scryfall-card" data-card-image="large">Questing Beast</a></li>
+    </ul>
+
+    <!-- Scryfall Tooltip Script -->
+    <script async src="https://cdn.scryfall.com/cards/tooltip.js"></script>
+</body>
+</html>
