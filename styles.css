@@ -132,9 +132,15 @@ footer a {
 /* New Styles */
 .deck-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Two responsive columns */
+    grid-template-columns: repeat(2, 1fr); /* Exactly two columns */
     gap: 20px;
     padding: 20px;
+}
+
+@media (max-width: 800px) {
+    .deck-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
 }
 
 .deck-item {
