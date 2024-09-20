@@ -131,8 +131,8 @@ footer a {
 
 /* New Styles */
 .deck-grid {
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Two responsive columns */
     gap: 20px;
     padding: 20px;
 }
