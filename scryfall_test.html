@@ -6,30 +6,33 @@
     <title>MTG Deck Page</title>
     <style>
         .card-link-wrapper {
-        position: relative; /* Position relative to allow absolute positioning of the image */
-    }
+    position: relative; /* Position relative to allow absolute positioning of the image */
+}
 
-    .card-link a {
-        color: inherit; /* Use the parent's text color */
-        text-decoration: none; /* Remove underline */
-        cursor: pointer; /* Change cursor to pointer */
-        display: inline-block; /* Ensure text is inline */
-    }
+.card-link a {
+    color: inherit; /* Use the parent's text color */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Change cursor to pointer */
+    display: inline-block; /* Ensure text is inline */
+}
 
-    .card-image {
-        display: none; /* Hide image by default */
-        position: absolute; /* Position absolutely */
-        left: 100%; /* Position the image to the right of the text */
-        top: 0; /* Align the image at the top next to the text */
-        margin-left: 10px; /* Optional: Add space between the text and the image */
-        width: 200px; /* Set width of the image */
-        z-index: 100; /* Ensure it appears above other elements */
-        border: 1px solid black; /* Optional: border for the image */
-    }
+.card-image {
+    display: none; /* Hide image by default */
+    position: absolute; /* Position absolutely */
+    left: 100%; /* Position the image to the right of the text */
+    top: 0; /* Align the image at the top next to the text */
+    margin-left: 10px; /* Optional: Add space between the text and the image */
+    width: 200px; /* Set width of the image */
+    z-index: 100; /* Ensure it appears above other elements */
+    border: 1px solid black; /* Optional: border for the image */
+    pointer-events: none; /* Disable interaction before it's visible */
+}
 
-    .card-link-wrapper:hover .card-image {
-        display: block; /* Show image on hover */
-    }
+.card-link-wrapper:hover .card-image {
+    display: block; /* Show image on hover */
+    pointer-events: auto; /* Enable interaction when visible */
+}
+
     </style>
 </head>
 <body>
