@@ -129,16 +129,17 @@ footer a {
 } */
 /*  */
 
-/* New Style */
+/* New Styles */
 .deck-grid {
-    column-count: 3; /* Number of columns */
-    column-gap: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    gap: 20px;
     padding: 20px;
 }
 
 .deck-item {
-    break-inside: avoid; /* Prevent items from breaking between columns */
-    margin-bottom: 20px; /* Space between items */
+    flex: 1 1 300px; /* Grow, shrink, and set a base width */
+    max-width: 800px; /* Prevent items from getting too wide */
 }
 /*  */
 
