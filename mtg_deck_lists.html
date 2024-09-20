@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSHammer's MTG Decks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+    <header>
+        <div class="logo">
+            <h1>BSHammer's MTG Deck Lists</h1>
+        </div>
+        <div id="navbar"></div>
+    </header>
+
+    <main>
+        <section class="deck-list">
+            <h2>Featured Decks</h2>
+            <div class="deck-grid">
+                <div class="deck-item">
+                    <img src="assets/mtg_decks/Boros_Triggers_v1.png" alt="MTG Deck 1">
+                    <h3>Deck Name 1</h3>
+                </div>
+                <div class="deck-item">
+                    <img src="assets/mtg_decks/Rakdos_Sacrifice_Aggro_v1.png" alt="MTG Deck 1">
+                    <h3>Deck Name 1</h3>
+                </div>
+                <div class="deck-item">
+                    <img src="assets/mtg_decks/Azorius_Auras_v1.png" alt="MTG Deck 1">
+                    <h3>Deck Name 1</h3>
+                </div>
+                <div class="deck-item">
+                    <img src="assets/mtg_decks/Delirium_Aggro_v1.png" alt="MTG Deck 1">
+                    <h3>Deck Name 1</h3>
+                </div>
+                <div class="deck-item">
+                    <img src="assets/mtg_decks/Jund_Conquest_v1.png" alt="MTG Deck 1">
+                    <h3>Deck Name 1</h3>
+                </div>
+                <div class="deck-item">
+                    <img src="assets/mtg_decks/Jeskai_Rooms_v1.png" alt="MTG Deck 1">
+                    <h3>Deck Name 1</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for expanded image -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="expandedImage" alt="Expanded MTG Deck">
+    </div>
+    </div>
+    <footer id="footer"></footer>
+
+    <!-- JavaScript to load navbar and modal functionality -->
+    <script>
+        // Load the navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+
+        // Load the footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+
+        // Get the modal
+        var modal = document.getElementById("imageModal");
+        var images = document.querySelectorAll('.deck-item img');
+        var expandedImage = document.getElementById("expandedImage");
+
+        images.forEach(image => {
+            image.onclick = function() {
+                modal.style.display = "block";
+                expandedImage.src = this.src;
+            }
+        });
+
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        modal.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

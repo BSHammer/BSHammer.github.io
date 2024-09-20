@@ -1,0 +1,185 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #575757;
+}
+
+/* Ensure wrapper fills available space */
+.wrapper {
+    flex: 1;
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+    color: #BFB700;
+}
+
+h1, h2, h3, h4 {
+    color: #78190B;
+}
+
+/* Header Styles */
+header {
+    background-color: #78190B;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #BFB700;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #BFB700;
+    font-weight: bold;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.featured-content {
+    margin-top: 30px;
+}
+
+.content-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.content-item {
+    background-color: #78190B;
+    color: #fff;
+    padding: 15px;
+    width: 45%;
+    border-radius: 8px;
+}
+
+.content-item h4 {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #575757;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    /* Ensure footer stays at the bottom */
+    margin-top: auto;
+}
+
+footer a {
+    color: #BFB700;
+}
+
+/* Deck Style Data */
+
+.deck-list {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Current style */
+/* .deck-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.deck-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+} */
+/*  */
+
+/* New Style */
+.deck-grid {
+    column-count: 3; /* Number of columns */
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.deck-item {
+    break-inside: avoid; /* Prevent items from breaking between columns */
+    margin-bottom: 20px; /* Space between items */
+}
+/*  */
+
+
+.deck-item:hover {
+    transform: translateY(-5px);
+}
+
+.deck-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* styles.css */
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; /* Width of the expanded image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
