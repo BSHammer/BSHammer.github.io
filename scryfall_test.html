@@ -4,12 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTG Deck Page</title>
+    <style>
+        /* Hide the card images initially */
+        .card-image {
+            display: none;
+            position: absolute;
+            width: 200px;
+            z-index: 100;
+            border: 1px solid black;
+        }
+
+        /* Show the card image when hovering over the card name */
+        .card-link:hover + .card-image {
+            display: block;
+        }
+
+        /* Align the image next to the link */
+        .card-link-wrapper {
+            position: relative;
+        }
+    </style>
 </head>
 <body>
-    <h1>MTG Deck List</h1>
-    <a data-card-id="Heartfire Hero [BLB]" data-full-image="https://cdn1.mtggoldfish.com/images/gf/Heartfire%2BHero%2B%255BBLB%255D.jpg" data-full-image-rotation="FALSE" rel="popover" href="/price/Bloomburrow/Heartfire+Hero#paper" data-original-title="" title="">Heartfire Hero</a>
 
-    <!-- Scryfall Tooltip Script -->
-    <script async src="https://cdn.scryfall.com/cards/tooltip.js"></script>
+    <h1>MTG Deck List</h1>
+    <ul>
+        <!-- Each card name with its corresponding image -->
+        <li class="card-link-wrapper">
+            <a href="#" class="card-link">Omnath, Locus of Creation</a>
+            <img src="https://c1.scryfall.com/file/scryfall-cards/large/front/3/4/34d1c75d-34b5-4204-943e-7cf25a4ddc02.jpg" 
+                 alt="Omnath, Locus of Creation" class="card-image">
+        </li>
+        <li class="card-link-wrapper">
+            <a href="#" class="card-link">Lotus Cobra</a>
+            <img src="https://c1.scryfall.com/file/scryfall-cards/large/front/f/f/ff7027ad-7d35-47c0-bf56-3db9c92e453d.jpg" 
+                 alt="Lotus Cobra" class="card-image">
+        </li>
+        <li class="card-link-wrapper">
+            <a href="#" class="card-link">Questing Beast</a>
+            <img src="https://c1.scryfall.com/file/scryfall-cards/large/front/e/4/e45bfbfa-011b-41ec-a7e2-c541295e8a30.jpg" 
+                 alt="Questing Beast" class="card-image">
+        </li>
+    </ul>
+
 </body>
 </html>
