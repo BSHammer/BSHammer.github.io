@@ -150,6 +150,7 @@
 
     <main style="text-align: left;">
         <h1>Deck Lists</h1>
+        <div id="boros_triggers"></div>
         <div id="5c_legends"></div>
         <div id="boros_meme_convoke"></div>
         <div id="domain"></div>
@@ -170,6 +171,12 @@
 
     <!-- JavaScript to load navbar and modal functionality -->
     <script>
+        fetch('/deck_list_html/boros_triggers.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('boros_triggers').innerHTML = data;
+        });
+
         fetch('/deck_list_html/5c_legends.html')
             .then(response => response.text())
             .then(data => {
