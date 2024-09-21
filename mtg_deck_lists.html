@@ -150,8 +150,10 @@
 
     <main style="text-align: left;">
         <h1>Deck Lists</h1>
-        <div id="bant_toxic"></div>
+        <div id="azorius_control"></div>
         <div id="rakdos_half-life"></div>
+        <div id="otter_control"></div>
+        <div id="bant_toxic"></div>
     </main>
 
     <!-- Modal for expanded image -->
@@ -164,17 +166,29 @@
 
     <!-- JavaScript to load navbar and modal functionality -->
     <script>
+        fetch('/deck_list_html/azorius_control.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('azorius_control').innerHTML = data;
+        });
+
         fetch('/deck_list_html/rakdos_half-life.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('rakdos_half-life').innerHTML = data;
-            });
+        });
 
         fetch('/deck_list_html/bant_toxic.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('bant_toxic').innerHTML = data;
-            });
+        });
+
+        fetch('/deck_list_html/otter_control.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('otter_control').innerHTML = data;
+        });
 
 
         // Load the navbar
