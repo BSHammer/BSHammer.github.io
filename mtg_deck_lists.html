@@ -99,6 +99,7 @@
             left: calc(100% + 365px); /* Position the back image to the right of the front */
         }
 
+        /* Popup CSS */
         .image-modal {
             display: none; /* Hidden by default */
             position: fixed; 
@@ -108,16 +109,18 @@
             width: 100%; 
             height: 100%;
             background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
-            overflow: auto; /* Enables scrolling when content overflows */
+            overflow: auto; /* Enable scrolling when content overflows */
         }
 
         .image-modal-content {
             display: block;
-            margin: 15% auto;
-            max-width: 100%;
-            max-height: 100%;
+            margin: 0 auto;
+            max-width: 150vw; /* 90% of viewport width */
+            max-height: 150vh; /* 90% of viewport height */
             border: 1px solid #ccc;
-            transform: translateY(-20%); /* Moves the image 20% upward */
+            position: relative;
+            top: 5%; /* Pushes image slightly down to prevent it from being cut off */
+            transform: translateY(0); /* No upward shift for better viewability on narrow screens */
         }
 
         .close {
