@@ -20,8 +20,9 @@ body {
 
 /* Link styles */
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #BFB700;
+    
 }
 
 h1, h2, h3, h4 {
