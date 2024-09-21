@@ -150,6 +150,9 @@
 
     <main style="text-align: left;">
         <h1>Deck Lists</h1>
+        <div id="boros_meme_convoke"></div>
+        <div id="domain"></div>
+        <div id="selesnya_rabbits"></div>
         <div id="azorius_control"></div>
         <div id="rakdos_half-life"></div>
         <div id="otter_control"></div>
@@ -166,6 +169,24 @@
 
     <!-- JavaScript to load navbar and modal functionality -->
     <script>
+            fetch('/deck_list_html/boros_meme_convoke.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('boros_meme_convoke').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/domain.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('domain').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/selesnya_rabbits.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('selesnya_rabbits').innerHTML = data;
+        });
+
         fetch('/deck_list_html/azorius_control.html')
             .then(response => response.text())
             .then(data => {
