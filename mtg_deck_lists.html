@@ -150,6 +150,9 @@
 
     <main style="text-align: left;">
         <h1>Deck Lists</h1>
+        <div id="4c_reanimator"></div>
+        <div id="dimir_skeletons"></div>
+        <div id="grixis_control"></div>
         <div id="boros_triggers"></div>
         <div id="5c_legends"></div>
         <div id="boros_meme_convoke"></div>
@@ -171,6 +174,24 @@
 
     <!-- JavaScript to load navbar and modal functionality -->
     <script>
+        fetch('/deck_list_html/4c_reanimator.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('4c_reanimator').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/dimir_skeletons.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('dimir_skeletons').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/grixis_control.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('grixis_control').innerHTML = data;
+        });
+
         fetch('/deck_list_html/boros_triggers.html')
             .then(response => response.text())
             .then(data => {
