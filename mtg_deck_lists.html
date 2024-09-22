@@ -150,6 +150,10 @@
 
     <main style="text-align: left;">
         <h1>Deck Lists</h1>
+        <div id="gruul_ramp"></div>
+        <div id="orzhov_reanimator"></div>
+        <div id="insidious_roots_v1"></div>
+        <div id="insidious_roots_v2"></div>
         <div id="4c_reanimator"></div>
         <div id="dimir_skeletons"></div>
         <div id="grixis_control"></div>
@@ -174,6 +178,30 @@
 
     <!-- JavaScript to load navbar and modal functionality -->
     <script>
+        fetch('/deck_list_html/gruul_ramp.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('gruul_ramp').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/orzhov_reanimator.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('orzhov_reanimator').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/insidious_roots_v2.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('insidious_roots_v2').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/insidious_roots_v1.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('insidious_roots_v1').innerHTML = data;
+        });
+
         fetch('/deck_list_html/4c_reanimator.html')
             .then(response => response.text())
             .then(data => {
