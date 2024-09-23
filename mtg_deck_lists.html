@@ -157,6 +157,8 @@
         <div id="boros_triggers"></div>
         <div id="boros_meme_convoke"></div>
         <div id="rakdos_half-life"></div>
+        <div id="jund_conquest"></div>
+        <div id="azorius_auras"></div>
         <h2>Bloomburrow Standard</h2>
         <div id="4c_reanimator"></div>
         <div id="boros_mouse_aggro_v1"></div>
@@ -177,6 +179,7 @@
         <div id="mono_red_otj"></div>
         <h2>Murders at Karlov Manor Standard</h2>
         <div id="domain"></div>
+        <div id="boros_convoke_mkm"></div>
     </main>
 
     <!-- Modal for expanded image -->
@@ -189,6 +192,24 @@
 
     <!-- JavaScript to load navbar and modal functionality -->
     <script>
+        fetch('/deck_list_html/boros_convoke_mkm.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('boros_convoke_mkm').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/azorius_auras.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('azorius_auras').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/jund_conquest.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('jund_conquest').innerHTML = data;
+        });
+
         fetch('/deck_list_html/simic_frogs.html')
             .then(response => response.text())
             .then(data => {
