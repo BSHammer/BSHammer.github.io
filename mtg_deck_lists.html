@@ -175,9 +175,10 @@
         <div id="rakdos_lizards"></div>
         <div id="simic_frogs"></div>
         <div id="5c_niv_mizzet"></div>
+        <div id="azorius_artifacts"></div>
         <h2>Outlaws of Thunder Junction Standard</h2>
         <div id="5c_legends"></div>
-        <div id="azorius_artifacts"></div>
+        
         <div id="gruul_ramp"></div>
         <div id="azorius_control"></div>
         <div id="bant_toxic"></div>
@@ -186,10 +187,12 @@
         <div id="simic_artifacts"></div>
         <div id="dimir_midrange"></div>
         <div id="golgari_midrange"></div>
+        <div id="boros_convoke_otj"></div>
+        <div id="esper_midrange"></div>
         <h2>Murders at Karlov Manor Standard</h2>
         <div id="domain"></div>
-        <div id="boros_convoke_mkm"></div>
-        <div id="esper_midrange"></div>
+        
+        
         <div id="temur_analyst_mkm"></div>
     </main>
 
@@ -269,10 +272,10 @@
             document.getElementById('azorius_artifacts').innerHTML = data;
         });
 
-        fetch('/deck_list_html/boros_convoke_mkm.html')
+        fetch('/deck_list_html/boros_convoke_otj.html')
             .then(response => response.text())
             .then(data => {
-            document.getElementById('boros_convoke_mkm').innerHTML = data;
+            document.getElementById('boros_convoke_otj').innerHTML = data;
         });
 
         fetch('/deck_list_html/azorius_auras.html')
