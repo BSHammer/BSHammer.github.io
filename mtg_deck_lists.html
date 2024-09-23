@@ -161,6 +161,7 @@
         <div id="azorius_auras"></div>
         <div id="delirium_aggro"></div>
         <div id="jeskai_rooms"></div>
+        <div id="rakdos_sacrifice"></div>
         <h2>Bloomburrow Standard</h2>
         <div id="4c_reanimator"></div>
         <div id="boros_mouse_aggro_v1"></div>
@@ -183,9 +184,13 @@
         <div id="mono_red_otj"></div>
         <div id="gruul_aggro_otj"></div>
         <div id="simic_artifacts"></div>
+        <div id="dimir_midrange"></div>
+        <div id="golgari_midrange"></div>
         <h2>Murders at Karlov Manor Standard</h2>
         <div id="domain"></div>
         <div id="boros_convoke_mkm"></div>
+        <div id="esper_midrange"></div>
+        <div id="temur_analyst_mkm"></div>
     </main>
 
     <!-- Modal for expanded image -->
@@ -198,6 +203,36 @@
 
     <!-- JavaScript to load navbar and modal functionality -->
     <script>
+        fetch('/deck_list_html/temur_analyst_mkm.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('temur_analyst_mkm').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/golgari_midrange.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('golgari_midrange').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/dimir_midrange.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('dimir_midrange').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/esper_midrange.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('esper_midrange').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/rakdos_sacrifice.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('rakdos_sacrifice').innerHTML = data;
+        });
+
         fetch('/deck_list_html/simic_artifacts.html')
             .then(response => response.text())
             .then(data => {
