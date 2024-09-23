@@ -159,34 +159,24 @@
         <div id="rakdos_half-life"></div>
         <h2>Bloomburrow Standard</h2>
         <div id="4c_reanimator"></div>
+        <div id="boros_mouse_aggro_v1"></div>
+        <div id="boros_mouse_aggro_v2"></div>
         <div id="grixis_control"></div>
         <div id="insidious_roots_v1"></div>
         <div id="insidious_roots_v2"></div>
         <div id="selesnya_rabbits"></div>
         <div id="otter_control"></div>
+        <div id="big_red_blb"></div>
+        <div id="rakdos_lizards"></div>
+        <div id="simic_frogs"></div>
         <h2>Outlaws of Thunder Junction Standard</h2>
         <div id="5c_legends"></div>
         <div id="gruul_ramp"></div>
         <div id="azorius_control"></div>
         <div id="bant_toxic"></div>
+        <div id="mono_red_otj"></div>
         <h2>Murders at Karlov Manor Standard</h2>
         <div id="domain"></div>
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
     </main>
 
     <!-- Modal for expanded image -->
@@ -199,6 +189,42 @@
 
     <!-- JavaScript to load navbar and modal functionality -->
     <script>
+        fetch('/deck_list_html/simic_frogs.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('simic_frogs').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/rakdos_lizards.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('rakdos_lizards').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/big_red_blb.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('big_red_blb').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/mono_red_otj.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('mono_red_otj').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/boros_mouse_aggro_v1.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('boros_mouse_aggro_v1').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/boros_mouse_aggro_v2.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('boros_mouse_aggro_v2').innerHTML = data;
+        });
+
         fetch('/deck_list_html/gruul_ramp.html')
             .then(response => response.text())
             .then(data => {
