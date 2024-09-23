@@ -1,0 +1,50 @@
+<div class="deck-container">
+	<div class="deck-header">
+		<h1>Gruul Aggro</h1>
+		Format: Standard
+		<br>
+		Source: Unknown
+		<br>
+		<a href="javascript:void(0);" onclick="openPopup('assets/mtg_decks/Gruul_Aggro_v1.png')">View Image</a>
+	</div>
+	<div id="image-popup" class="image-modal" onclick="closePopupOnClickOutside(event)">
+		<span class="close" onclick="closePopup()">&times;</span>
+		<img id="popup-image" class="image-modal-content" alt="Deck Image">
+	</div>
+	<div class="deck-list">
+		<div class="section">
+			<h2>Creatures (18)</h2>
+			<ul>
+				 <li><span class="card">4 Fugitive Codebreaker <img src="https://cards.scryfall.io/large/front/b/6/b682bf8a-06dc-4828-bc46-9e1427bf981f.jpg?1706241868" alt="Fugitive Codebreaker"> </span></li>
+				 <li><span class="card">4 Monastery Swiftspear <img src="https://cards.scryfall.io/large/front/d/6/d6bfa227-4309-40ed-952c-279595eab17e.jpg?1701690543" alt="Monastery Swiftspear"> </span></li>
+				 <li><span class="card">4 Questing Druid // Seek the Beast <img src="https://cards.scryfall.io/large/front/7/2/72c130e2-1e17-4996-a5ae-231155d68261.jpg?1692939742" alt="Questing Druid // Seek the Beast"> </span></li>
+				 <li><span class="card">4 Slickshot Show-Off <img src="https://cards.scryfall.io/large/front/7/0/7054012b-4f9d-44a0-aaf9-7fd3bddc7b2d.jpg?1712355850" alt="Slickshot Show-Off"> </span></li>
+				 <li><span class="card">2 Two-Headed Hunter // Twice the Rage <img src="https://cards.scryfall.io/large/front/7/0/70c12e75-7e65-4706-b976-e47835910928.jpg?1692938593" alt="Two-Headed Hunter // Twice the Rage"> </span></li>
+			</ul>
+			<h2>Enchantments (8)</h2>
+			<ul>
+				 <li><span class="card">4 Demonic Ruckus <img src="https://cards.scryfall.io/large/front/5/b/5b491d11-d00a-4541-8389-2785a455eeee.jpg?1712355738" alt="Demonic Ruckus"> </span></li>
+				 <li><span class="card">4 Kumano Faces Kakkazan // Etching of Kumano <img src="https://cards.scryfall.io/large/front/2/8/28d92cad-45b0-479d-97fc-c175f3a3f259.jpg?1693966032" alt="Kumano Faces Kakkazan // Etching of Kumano" class="front"> <img src="https://cards.scryfall.io/large/back/2/8/28d92cad-45b0-479d-97fc-c175f3a3f259.jpg?1693966032" alt="Kumano Faces Kakkazan // Etching of Kumano" class="back"> </span></li>
+			</ul>
+			<h2>Spells (13)</h2>
+			<ul>
+				 <li><span class="card">4 Monstrous Rage <img src="https://cards.scryfall.io/large/front/e/e/eef5a0ae-5907-42c9-a097-3f973737e392.jpg?1692938394" alt="Monstrous Rage"> </span></li>
+				 <li><span class="card">4 Play with Fire <img src="https://cards.scryfall.io/large/front/6/f/6f1a6c60-a8c4-44c2-b1ea-d3befbabdf43.jpg?1636223358" alt="Play with Fire"> </span></li>
+				 <li><span class="card">2 Snakeskin Veil <img src="https://cards.scryfall.io/large/front/1/3/133fbdec-0d00-433f-9015-5eb091126e3a.jpg?1712355994" alt="Snakeskin Veil"> </span></li>
+				 <li><span class="card">1 Twinferno <img src="https://cards.scryfall.io/large/front/b/c/bc531409-26cb-4c58-ba69-f39dd8aee3d1.jpg?1717202608" alt="Twinferno"> </span></li>
+				 <li><span class="card">2 Witchstalker Frenzy <img src="https://cards.scryfall.io/large/front/6/4/649025a7-79d1-4d7c-b1db-d46bcf5a1ae2.jpg?1692938651" alt="Witchstalker Frenzy"> </span></li>
+			</ul>
+		</div>
+		<div class="section">
+			<h2>Lands (21)</h2>
+			<ul>
+				 <li><span class="card">1 Boseiju, Who Endures <img src="https://cards.scryfall.io/large/front/2/1/2135ac5a-187b-4dc9-8f82-34e8d1603416.jpg?1654568912" alt="Boseiju, Who Endures"> </span></li>
+				 <li><span class="card">4 Copperline Gorge <img src="https://cards.scryfall.io/large/front/7/8/78b0f36b-7d8c-4e77-adc2-a4dad93a81d5.jpg?1675957264" alt="Copperline Gorge"> </span></li>
+				 <li><span class="card">4 Karplusan Forest <img src="https://cards.scryfall.io/large/front/b/8/b89b2c79-e3d3-4ef9-bfc8-f9c090975011.jpg?1673308330" alt="Karplusan Forest"> </span></li>
+				 <li><span class="card">8 Mountain <img src="https://cards.scryfall.io/large/front/a/c/accb56f0-3903-4894-86f0-3965162064d4.jpg?1726286930" alt="Mountain"> </span></li>
+				 <li><span class="card">2 Restless Ridgeline <img src="https://cards.scryfall.io/large/front/a/b/abde5bed-dc4e-4b2b-820c-18d4d0cf8042.jpg?1699044703" alt="Restless Ridgeline"> </span></li>
+				 <li><span class="card">2 Sokenzan, Crucible of Defiance <img src="https://cards.scryfall.io/large/front/a/a/aa548dcd-c1dd-492d-a69f-c65dfeef0633.jpg?1654569016" alt="Sokenzan, Crucible of Defiance"> </span></li>
+			</ul>
+		</div>
+	</div>
+</div>

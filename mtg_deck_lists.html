@@ -173,10 +173,12 @@
         <div id="simic_frogs"></div>
         <h2>Outlaws of Thunder Junction Standard</h2>
         <div id="5c_legends"></div>
+        <div id="azorius_artifacts"></div>
         <div id="gruul_ramp"></div>
         <div id="azorius_control"></div>
         <div id="bant_toxic"></div>
         <div id="mono_red_otj"></div>
+        <div id="gruul_aggro_otj"></div>
         <h2>Murders at Karlov Manor Standard</h2>
         <div id="domain"></div>
         <div id="boros_convoke_mkm"></div>
@@ -192,6 +194,18 @@
 
     <!-- JavaScript to load navbar and modal functionality -->
     <script>
+        fetch('/deck_list_html/gruul_aggro_otj.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('gruul_aggro_otj').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/azorius_artifacts.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('azorius_artifacts').innerHTML = data;
+        });
+
         fetch('/deck_list_html/boros_convoke_mkm.html')
             .then(response => response.text())
             .then(data => {
