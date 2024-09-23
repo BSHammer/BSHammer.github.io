@@ -159,6 +159,8 @@
         <div id="rakdos_half-life"></div>
         <div id="jund_conquest"></div>
         <div id="azorius_auras"></div>
+        <div id="delirium_aggro"></div>
+        <div id="jeskai_rooms"></div>
         <h2>Bloomburrow Standard</h2>
         <div id="4c_reanimator"></div>
         <div id="boros_mouse_aggro_v1"></div>
@@ -171,6 +173,7 @@
         <div id="big_red_blb"></div>
         <div id="rakdos_lizards"></div>
         <div id="simic_frogs"></div>
+        <div id="5c_niv_mizzet"></div>
         <h2>Outlaws of Thunder Junction Standard</h2>
         <div id="5c_legends"></div>
         <div id="azorius_artifacts"></div>
@@ -179,6 +182,7 @@
         <div id="bant_toxic"></div>
         <div id="mono_red_otj"></div>
         <div id="gruul_aggro_otj"></div>
+        <div id="simic_artifacts"></div>
         <h2>Murders at Karlov Manor Standard</h2>
         <div id="domain"></div>
         <div id="boros_convoke_mkm"></div>
@@ -194,6 +198,30 @@
 
     <!-- JavaScript to load navbar and modal functionality -->
     <script>
+        fetch('/deck_list_html/simic_artifacts.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('simic_artifacts').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/jeskai_rooms.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('jeskai_rooms').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/delirium_aggro.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('delirium_aggro').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/5c_niv_mizzet.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('5c_niv_mizzet').innerHTML = data;
+        });
+
         fetch('/deck_list_html/gruul_aggro_otj.html')
             .then(response => response.text())
             .then(data => {
