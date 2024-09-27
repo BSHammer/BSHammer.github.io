@@ -208,11 +208,11 @@ footer a {
   }
 
   .collapsible[open] summary::before {
-    content: "▲ "; /* Open indicator */
+    content: ""; /* Open indicator */
   }
 
   .collapsible summary::before {
-    content: "▼ "; /* Closed indicator */
+    content: ""; /* Closed indicator */
   }
 
   .collapsible details[open] {
