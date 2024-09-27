@@ -192,3 +192,31 @@ footer a {
     cursor: pointer;
 }
 
+
+.collapsible {
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  .collapsible summary {
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .collapsible[open] summary::before {
+    content: "▲ "; /* Open indicator */
+  }
+
+  .collapsible summary::before {
+    content: "▼ "; /* Closed indicator */
+  }
+
+  .collapsible details[open] {
+    padding: 1em;
+    border-top: 1px solid #ccc;
+    margin-top: 1em;
+  }
