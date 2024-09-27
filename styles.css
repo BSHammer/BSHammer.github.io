@@ -212,7 +212,7 @@ footer a {
   }
 
   .collapsible summary::before {
-    content: "▼"; /* Closed indicator */
+    content: ""; /* Closed indicator */
   }
 
   .collapsible details[open] {
