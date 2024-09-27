@@ -387,6 +387,12 @@
             .then(data => {
             document.getElementById('grixis_control').innerHTML = data;
         });
+        
+        fetch('/deck_list_html/boros_meme_convoke.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('boros_meme_convoke').innerHTML = data;
+        });
 
         fetch('/deck_list_html/boros_triggers.html')
             .then(response => response.text())
