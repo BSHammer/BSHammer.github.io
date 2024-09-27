@@ -217,29 +217,4 @@ footer a {
     background-color: #f4f4f4;
   }
 
-
-  .collapsible-deck {
-    background-color: #575757;
-    color: #BFB700;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 30px;
-    font-weight: bold;
-  }
-  
-  .active-deck, .collapsible-deck:hover {
-    background-color: #78190B;
-  }
-  
-  .content1 {
-    /* padding: 0 18px; */
-    display: none;
-    overflow: hidden;
-    background-color: #f4f4f4;
-  }
-  
   
