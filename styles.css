@@ -194,43 +194,24 @@ footer a {
 
 
 .collapsible {
-    margin-bottom: 1em;
-    border: 1px solid #ccc;
-    padding: 1em;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-  }
-  
-  .collapsible summary {
-    display: flex;
-    align-items: center;
+    background-color: #777;
+    color: white;
     cursor: pointer;
-    list-style: none;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
   }
   
-  .collapsible summary h2 {
-    margin: 0; /* Remove margin to prevent shifting */
-    font-size: 1.5em;
-    display: flex;
-    justify-content: space-between; /* Keeps the arrow in a fixed position */
-    align-items: center;
+  .active, .collapsible:hover {
+    background-color: #555;
   }
   
-  .collapsible .arrow {
-    font-size: 1.2em;
-    transition: transform 0.3s;
-  }
-  
-  .collapsible[open] .arrow {
-    transform: rotate(180deg);
-  }
-  
-  .collapsible details[open] {
-    padding: 1em;
-    margin-top: 1em;
-  }
-  
-  /* Ensuring the content inside the details doesn't push the toggle */
-  .collapsible summary::marker {
-    display: none; /* Remove the default marker to avoid layout shift */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
   }
