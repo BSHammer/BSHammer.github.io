@@ -212,16 +212,18 @@ footer a {
     margin: 0;
     flex-grow: 1;
     font-size: 1.5em;
+    display: flex;
+    align-items: center;
   }
   
-  .collapsible summary::after {
+  .collapsible .arrow {
     content: "▼";
     font-size: 1.2em;
     margin-left: 10px;
     transition: transform 0.3s;
   }
   
-  .collapsible[open] summary::after {
+  .collapsible[open] .arrow {
     content: "▲";
     transform: rotate(180deg);
   }
