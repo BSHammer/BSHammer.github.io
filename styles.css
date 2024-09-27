@@ -209,26 +209,28 @@ footer a {
   }
   
   .collapsible summary h2 {
-    margin: 0;
-    flex-grow: 1;
+    margin: 0; /* Remove margin to prevent shifting */
     font-size: 1.5em;
     display: flex;
+    justify-content: space-between; /* Keeps the arrow in a fixed position */
     align-items: center;
   }
   
   .collapsible .arrow {
-    content: "▼";
     font-size: 1.2em;
-    margin-left: 10px;
     transition: transform 0.3s;
   }
   
   .collapsible[open] .arrow {
-    content: "▲";
     transform: rotate(180deg);
   }
   
   .collapsible details[open] {
     padding: 1em;
     margin-top: 1em;
+  }
+  
+  /* Ensuring the content inside the details doesn't push the toggle */
+  .collapsible summary::marker {
+    display: none; /* Remove the default marker to avoid layout shift */
   }
