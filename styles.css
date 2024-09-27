@@ -194,24 +194,25 @@ footer a {
 
 
 .collapsible {
-    background-color: #fff;
-    color: black;
+    background-color: #575757;
+    color: #BFB700;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 40px;
+    font-weight: bold;
   }
   
   .active, .collapsible:hover {
-    background-color: #BFB700;
+    background-color: #78190B;
   }
   
   .content {
     /* padding: 0 18px; */
     display: none;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #f4f4f4;
   }
