@@ -213,7 +213,8 @@ footer a {
   }
   
   .content {
-    overflow: hidden;
+    max-height: 0;
+    overflow: visible;
     padding-left: 20px;
     display: none;
     background-color: #f4f4f4;
