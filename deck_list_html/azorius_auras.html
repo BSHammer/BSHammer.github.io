@@ -49,3 +49,26 @@
 		</div>
 	</div>
 </div>
+<script>
+	function showDeckImg() {
+            /* Access image by id and change 
+            the display property to block*/
+            document.getElementById('deck-image-popup')
+                .style.display = "block";
+            document.getElementById('viewBtn')
+                .style.display = "none";
+            document.getElementById('closeBtn')
+                .style.display = "block";
+        }
+
+        function closeDeckImg() {
+            /* Access image by id and change 
+            the display property to block*/
+            document.getElementById('deck-image-popup')
+                .style.display = "none";
+            document.getElementById('viewBtn')
+                .style.display = "block";
+            document.getElementById('closeBtn')
+                .style.display = "none";
+        }
+</script>
