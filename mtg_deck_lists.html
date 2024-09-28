@@ -165,6 +165,8 @@
             <div class="content"><div id="dimir_skeletons"></div></div>
             <button type="button" class="collapsible" style="font-size: 20px;">Jeskai Rooms <i class="ms ms-cost ms-u" style="font-size: 32px;"></i> <i class="ms ms-cost ms-r" style="font-size: 32px;"></i> <i class="ms ms-cost ms-w" style="font-size: 32px;"></i></button>
             <div class="content"><div id="jeskai_rooms"></div></div>
+            <button type="button" class="collapsible" style="font-size: 20px;">Jeskai Rooms Version 2 <i class="ms ms-cost ms-u" style="font-size: 32px;"></i> <i class="ms ms-cost ms-r" style="font-size: 32px;"></i> <i class="ms ms-cost ms-w" style="font-size: 32px;"></i></button>
+            <div class="content"><div id="jeskai_rooms_v2"></div></div>
             <button type="button" class="collapsible" style="font-size: 20px;">Jund Conquest <i class="ms ms-cost ms-b" style="font-size: 32px;"></i> <i class="ms ms-cost ms-r" style="font-size: 32px;"></i> <i class="ms ms-cost ms-g" style="font-size: 32px;"></i></button>
             <div class="content"><div id="jund_conquest"></div></div>
             <button type="button" class="collapsible" style="font-size: 20px;">Orzhov Reanimator <i class="ms ms-cost ms-w" style="font-size: 32px;"></i> <i class="ms ms-cost ms-b" style="font-size: 32px;"></i></button>
@@ -267,6 +269,12 @@
             .then(response => response.text())
             .then(data => {
             document.getElementById('jeskai_rooms').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/jeskai_rooms_v2.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('jeskai_rooms_v2').innerHTML = data;
         });
 
         fetch('/deck_list_html/delirium_aggro.html')
