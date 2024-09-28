@@ -37,6 +37,14 @@
             gap: 250px; /* Set the gap between columns */
         }
 
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            .deck-list {
+                flex-direction: column; /* Change to a single column on mobile */
+                gap: 0; /* Remove the gap between columns */
+            }
+        }
+
         ul {
             list-style-type: none;
             padding: 0;
