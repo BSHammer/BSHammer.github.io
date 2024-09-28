@@ -151,6 +151,10 @@
         #deck-image-popup {
             display: none;
         }
+
+        #closeBtn {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -557,7 +561,20 @@
             the display property to block*/
             document.getElementById('deck-image-popup')
                 .style.display = "block";
-            document.getElementById('btnID')
+            document.getElementById('viewBtn')
+                .style.display = "none";
+            document.getElementById('closeBtn')
+                .style.display = "block";
+        }
+
+        function closeDeckImg() {
+            /* Access image by id and change 
+            the display property to block*/
+            document.getElementById('deck-image-popup')
+                .style.display = "none";
+            document.getElementById('viewBtn')
+                .style.display = "block";
+            document.getElementById('closeBtn')
                 .style.display = "none";
         }
 
