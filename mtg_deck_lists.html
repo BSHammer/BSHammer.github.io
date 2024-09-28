@@ -146,6 +146,11 @@
             text-decoration: none;
             cursor: pointer;
         }
+
+
+        #deck-image-popup {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -545,6 +550,15 @@
             content1.style.display = "block";
             }
         });
+        }
+
+        function showDeckImg() {
+            /* Access image by id and change 
+            the display property to block*/
+            document.getElementById('deck-image-popup')
+                .style.display = "block";
+            document.getElementById('btnID')
+                .style.display = "none";
         }
 
     </script>
