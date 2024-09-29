@@ -578,18 +578,18 @@
         //         .style.display = "none";
         // }
 
-        function showDeckImg(deckNumber) {
+        function showDeckImg(deckID) {
             // Access specific image and buttons using the passed deckNumber
-            document.getElementById('deckImg' + deckNumber).style.display = "block";
-            document.getElementById('viewBtn' + deckNumber).style.display = "none";
-            document.getElementById('closeBtn' + deckNumber).style.display = "block";
+            document.getElementById('deckImg_' + deckID).style.display = "block";
+            document.getElementById('viewBtn_' + deckID).style.display = "none";
+            document.getElementById('closeBtn_' + deckID).style.display = "block";
         }
 
-        function closeDeckImg(deckNumber) {
+        function closeDeckImg(deckID) {
             // Access specific image and buttons using the passed deckNumber
-            document.getElementById('deckImg' + deckNumber).style.display = "none";
-            document.getElementById('viewBtn' + deckNumber).style.display = "block";
-            document.getElementById('closeBtn' + deckNumber).style.display = "none";
+            document.getElementById('deckImg_' + deckID).style.display = "none";
+            document.getElementById('viewBtn_' + deckID).style.display = "block";
+            document.getElementById('closeBtn_' + deckID).style.display = "none";
         }
 
     </script>
