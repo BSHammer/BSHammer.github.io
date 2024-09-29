@@ -148,11 +148,11 @@
         }
 
 
-        #deck-image-popup {
+        .deck-image-popup {
             display: none;
         }
 
-        #closeBtn {
+        .closeBtn {
             display: none;
         }
     </style>
@@ -577,6 +577,20 @@
         //     document.getElementById('closeBtn')
         //         .style.display = "none";
         // }
+
+        function showDeckImg(deckNumber) {
+            // Access specific image and buttons using the passed deckNumber
+            document.getElementById('deckImg' + deckNumber).style.display = "block";
+            document.getElementById('viewBtn' + deckNumber).style.display = "none";
+            document.getElementById('closeBtn' + deckNumber).style.display = "block";
+        }
+
+        function closeDeckImg(deckNumber) {
+            // Access specific image and buttons using the passed deckNumber
+            document.getElementById('deckImg' + deckNumber).style.display = "none";
+            document.getElementById('viewBtn' + deckNumber).style.display = "block";
+            document.getElementById('closeBtn' + deckNumber).style.display = "none";
+        }
 
     </script>
 </body>
