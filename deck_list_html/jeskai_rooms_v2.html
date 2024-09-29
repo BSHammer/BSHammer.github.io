@@ -5,11 +5,13 @@
 		<br>
 		Source: CFavretto_Jr Viewer Deck
 		<br>
-		<a href="javascript:void(0);" onclick="openPopup('assets/mtg_decks/Jeskai_Rooms_v2.png')">View Image</a>
-	</div>
-	<div id="image-popup" class="image-modal" onclick="closePopupOnClickOutside(event)">
-		<span class="close" onclick="closePopup()">&times;</span>
-		<img id="popup-image" class="image-modal-content" alt="Deck Image">
+		<button type="button" onclick="closeDeckImg('jeskai_rooms_v2')" id="closeBtn_jeskai_rooms_v2" class="closeBtn">
+			Close Image
+		</button>
+		<img class="deck-image-popup" id="deckImg_jeskai_rooms_v2" style="width: 75%;" src="assets/mtg_decks/Jeskai_Rooms_v2.png" alt="Deck Image"> 
+		<button type="button" onclick="showDeckImg('jeskai_rooms_v2')" id="viewBtn_jeskai_rooms_v2">
+			View Image
+		</button>
 	</div>
 	<div class="deck-list">
 		<div class="section">

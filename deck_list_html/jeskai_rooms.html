@@ -5,11 +5,13 @@
 		<br>
 		Source: <a href="https://www.mtggoldfish.com/deck/6635463#paper" target="_blank">Saffron Olive - MTGGoldfish</a>
 		<br>
-		<a href="javascript:void(0);" onclick="openPopup('assets/mtg_decks/Jeskai_Rooms_v1.png')">View Image</a>
-	</div>
-	<div id="image-popup" class="image-modal" onclick="closePopupOnClickOutside(event)">
-		<span class="close" onclick="closePopup()">&times;</span>
-		<img id="popup-image" class="image-modal-content" alt="Deck Image">
+		<button type="button" onclick="closeDeckImg('jeskai_rooms')" id="closeBtn_jeskai_rooms" class="closeBtn">
+			Close Image
+		</button>
+		<img class="deck-image-popup" id="deckImg_jeskai_rooms" style="width: 75%;" src="assets/mtg_decks/Jeskai_Rooms_v1.png" alt="Deck Image"> 
+		<button type="button" onclick="showDeckImg('jeskai_rooms')" id="viewBtn_jeskai_rooms">
+			View Image
+		</button>
 	</div>
 	<div class="deck-list">
 		<div class="section">

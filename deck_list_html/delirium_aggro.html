@@ -5,12 +5,15 @@
 		<br>
 		Source: <a href="https://infinite.tcgplayer.com/article/50-MTG-Decks-for-Duskmourn-House-of-Horror/9b6edf47-3351-4583-b7e9-5530a7c51864/" target="_blank">yoman5 - TCGplayer</a>
 		<br>
-		<a href="javascript:void(0);" onclick="openPopup('assets/mtg_decks/Delirium_Aggro_v1.png')">View Image</a>
+		<button type="button" onclick="closeDeckImg('delirium_aggro')" id="closeBtn_delirium_aggro" class="closeBtn">
+			Close Image
+		</button>
+		<img class="deck-image-popup" id="deckImg_delirium_aggro" style="width: 75%;" src="assets/mtg_decks/Delirium_Aggro_v1.png" alt="Deck Image"> 
+		<button type="button" onclick="showDeckImg('delirium_aggro')" id="viewBtn_delirium_aggro">
+			View Image
+		</button>
 	</div>
-	<div id="image-popup" class="image-modal" onclick="closePopupOnClickOutside(event)">
-		<span class="close" onclick="closePopup()">&times;</span>
-		<img id="popup-image" class="image-modal-content" alt="Deck Image">
-	</div>
+
 	<div class="deck-list">
 		<div class="section">
 			<h2>Creatures (25)</h2>
