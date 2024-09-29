@@ -9,8 +9,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #575757;
+    background-color: #575757;
+    color: #f4f4f4;
 }
 
 /* Ensure wrapper fills available space */
