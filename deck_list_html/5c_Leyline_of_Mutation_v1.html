@@ -4,11 +4,13 @@
 		<br>
 		Source: Unknown
 		<br>
-		<a href="javascript:void(0);" onclick="openPopup('assets/mtg_decks/5c_Leyline_of_Mutation_v1.png')">View Image</a>
-	</div>
-	<div id="image-popup" class="image-modal" onclick="closePopupOnClickOutside(event)">
-		<span class="close" onclick="closePopup()">&times;</span>
-		<img id="popup-image" class="image-modal-content" alt="Deck Image">
+		<button type="button" onclick="closeDeckImg('5c_Leyline_of_Mutation_v1')" id="closeBtn_5c_Leyline_of_Mutation_v1" class="closeBtn">
+			Close Image
+		</button>
+		<img class="deck-image-popup" id="deckImg_5c_Leyline_of_Mutation_v1" style="width: 75%; margin: 0 auto;" src="assets/mtg_decks/5c_Leyline_of_Mutation_v1_v1.png" alt="Deck Image"> 
+		<button type="button" onclick="showDeckImg('5c_Leyline_of_Mutation_v1')" id="viewBtn_5c_Leyline_of_Mutation_v1">
+			View Image
+		</button>
 	</div>
 	<div class="deck-list">
 		<div class="section">
