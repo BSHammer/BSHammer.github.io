@@ -195,6 +195,8 @@
             <div class="content"><div id="rakdos_half-life"></div></div>
             <button type="button" class="collapsible" style="font-size: 20px;">Rakdos Sacrifice <i class="ms ms-cost ms-b" style="font-size: 32px;"></i> <i class="ms ms-cost ms-r" style="font-size: 32px;"></i></button>
             <div class="content"><div id="rakdos_sacrifice"></div></div>
+            <button type="button" class="collapsible" style="font-size: 20px;">Rakdos Sacrifice Viper <i class="ms ms-cost ms-b" style="font-size: 32px;"></i> <i class="ms ms-cost ms-r" style="font-size: 32px;"></i></button>
+            <div class="content"><div id="Rakdos_Sacrifice_Viper_v1"></div></div>
         </div>
         <!-- <div class="collapsible"> -->
         <!-- <div>
@@ -249,6 +251,12 @@
 
     
     <script>
+        fetch('/deck_list_html/Rakdos_Sacrifice_Viper_v1.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('Rakdos_Sacrifice_Viper_v1').innerHTML = data;
+        });
+
         fetch('/deck_list_html/5c_Leyline_of_Mutation_v1.html')
             .then(response => response.text())
             .then(data => {
