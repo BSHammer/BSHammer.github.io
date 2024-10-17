@@ -180,6 +180,8 @@
             <div class="content"><div id="delirium_aggro"></div></div>
             <button type="button" class="collapsible" style="font-size: 20px;">Dimir Skeletons <i class="ms ms-cost ms-u" style="font-size: 32px;"></i> <i class="ms ms-cost ms-b" style="font-size: 32px;"></i></button>
             <div class="content"><div id="dimir_skeletons"></div></div>
+            <button type="button" class="collapsible" style="font-size: 20px;">Domain Duskmourn <i class="ms ms-cost ms-w" style="font-size: 32px;"></i> <i class="ms ms-cost ms-u" style="font-size: 32px;"></i> <i class="ms ms-cost ms-b" style="font-size: 32px;"></i> <i class="ms ms-cost ms-g" style="font-size: 32px;"></i></button>
+            <div class="content"><div id="4c_Domain_Duskmourn_v1"></div></div>
             <button type="button" class="collapsible" style="font-size: 20px;">Jeskai Rooms <i class="ms ms-cost ms-u" style="font-size: 32px;"></i> <i class="ms ms-cost ms-r" style="font-size: 32px;"></i> <i class="ms ms-cost ms-w" style="font-size: 32px;"></i></button>
             <div class="content"><div id="jeskai_rooms"></div></div>
             <button type="button" class="collapsible" style="font-size: 20px;">Jeskai Rooms Version 2 <i class="ms ms-cost ms-u" style="font-size: 32px;"></i> <i class="ms ms-cost ms-r" style="font-size: 32px;"></i> <i class="ms ms-cost ms-w" style="font-size: 32px;"></i></button>
@@ -197,6 +199,8 @@
             <div class="content"><div id="rakdos_sacrifice"></div></div>
             <button type="button" class="collapsible" style="font-size: 20px;">Rakdos Sacrifice Viper <i class="ms ms-cost ms-b" style="font-size: 32px;"></i> <i class="ms ms-cost ms-r" style="font-size: 32px;"></i></button>
             <div class="content"><div id="Rakdos_Sacrifice_Viper_v1"></div></div>
+            <button type="button" class="collapsible" style="font-size: 20px;">Sultai Hedge Shredder <i class="ms ms-cost ms-u" style="font-size: 32px;"></i> <i class="ms ms-cost ms-b" style="font-size: 32px;"></i> <i class="ms ms-cost ms-g" style="font-size: 32px;"></i></button>
+            <div class="content"><div id="Sultai_Hedge_Shredder_v1"></div></div>
         </div>
         <!-- <div class="collapsible"> -->
         <!-- <div>
@@ -251,6 +255,18 @@
 
     
     <script>
+        fetch('/deck_list_html/Sultai_Hedge_Shredder_v1.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('Sultai_Hedge_Shredder_v1').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/4c_Domain_Duskmourn_v1.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('4c_Domain_Duskmourn_v1').innerHTML = data;
+        });
+
         fetch('/deck_list_html/Rakdos_Sacrifice_Viper_v1.html')
             .then(response => response.text())
             .then(data => {
