@@ -170,6 +170,8 @@
         <h1>Deck Lists</h1>
         <button type="button" class="collapsible">Magic World Championship 30</button>
         <div class="content">
+            <button type="button" class="collapsible" style="font-size: 20px;">Dimir Midrange <i class="ms ms-cost ms-u" style="font-size: 32px;"></i> <i class="ms ms-cost ms-b" style="font-size: 32px;"></i></button>
+            <div class="content"><div id="Dimir_Midrange_Kai_Budde_Magic_World_Championship_30"></div></div>
             <button type="button" class="collapsible" style="font-size: 20px;">Temur Prowess Combo <i class="ms ms-cost ms-u" style="font-size: 32px;"></i> <i class="ms ms-cost ms-r" style="font-size: 32px;"></i> <i class="ms ms-cost ms-g" style="font-size: 32px;"></i></button>
             <div class="content"><div id="Temur_Prowess_Combo_v1"></div></div>
         </div>
@@ -189,6 +191,12 @@
             .then(response => response.text())
             .then(data => {
             document.getElementById('Temur_Prowess_Combo_v1').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/worlds_2024/Dimir_Midrange_Kai_Budde_Magic_World_Championship_30.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('Dimir_Midrange_Kai_Budde_Magic_World_Championship_30').innerHTML = data;
         });
     </script>
 
