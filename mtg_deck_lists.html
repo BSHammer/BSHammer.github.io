@@ -168,6 +168,16 @@
 
     <main style="text-align: left;">
         <h1>Deck Lists</h1>
+
+        <button type="button" class="collapsible">Foundation Standard</button>
+        <div class="content">
+            <button type="button" class="collapsible" style="font-size: 20px;">Gruul Dinosaur Surprise <i class="ms ms-cost ms-r" style="font-size: 32px;"></i> <i class="ms ms-cost ms-g" style="font-size: 32px;"></i></button>
+            <div class="content"><div id="Gruul_Dinosaur_Surprise_yoman5"></div></div>
+            <button type="button" class="collapsible" style="font-size: 20px;">White Cats <i class="ms ms-cost ms-w" style="font-size: 32px;"></i> </button>
+            <div class="content"><div id="White_Cats_yoman5"></div></div>
+        </div>
+        
+
         <button type="button" class="collapsible">Duskmourn Standard</button>
         <div class="content">
             <button type="button" class="collapsible" style="font-size: 20px;">Azorius Auras <i class="ms ms-cost ms-w" style="font-size: 32px;"></i> <i class="ms ms-cost ms-u" style="font-size: 32px;"></i></button>
@@ -254,6 +264,20 @@
 
     
     <script>
+        
+
+        fetch('/deck_list_html/Gruul_Dinosaur_Surprise_yoman5.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('Gruul_Dinosaur_Surprise_yoman5').innerHTML = data;
+        });
+
+        fetch('/deck_list_html/Mono-White_Cats_yoman5.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('Mono-White_Cats_yoman5').innerHTML = data;
+        });
+
         fetch('/deck_list_html/Sultai_Hedge_Shredder_v1.html')
             .then(response => response.text())
             .then(data => {
