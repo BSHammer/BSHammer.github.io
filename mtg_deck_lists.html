@@ -166,11 +166,13 @@
         <div id="navbar"></div>
     </header>
 
-    <main style="text-align: left;">
+    <main style="text-align: left;"> 
         <h1>Deck Lists</h1>
 
         <button type="button" class="collapsible">Foundation Standard</button>
         <div class="content">
+            <button type="button" class="collapsible" style="font-size: 20px;">Boros Aggro Foundations <i class="ms ms-cost ms-w" style="font-size: 32px;"></i> <i class="ms ms-cost ms-r" style="font-size: 32px;"></i></button>
+            <div class="content"><div id="Boros_Aggro_Foundations_UntappedGG"></div></div>
             <button type="button" class="collapsible" style="font-size: 20px;">Gruul Dinosaur Surprise <i class="ms ms-cost ms-r" style="font-size: 32px;"></i> <i class="ms ms-cost ms-g" style="font-size: 32px;"></i></button>
             <div class="content"><div id="Gruul_Dinosaur_Surprise_yoman5"></div></div>
             <button type="button" class="collapsible" style="font-size: 20px;">Mono-White Cats <i class="ms ms-cost ms-w" style="font-size: 32px;"></i> </button>
@@ -268,6 +270,12 @@
 
     
     <script>
+
+        fetch('deck_list_html/Boros_Aggro_Foundations_UntappedGG.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('Boros_Aggro_Foundations_UntappedGG').innerHTML = data;
+        });
         
         fetch('deck_list_html/Zur_Overlord_Domain_AliEldrazi.html')
             .then(response => response.text())
